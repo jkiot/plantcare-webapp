@@ -1,9 +1,13 @@
 .logo {
-  color: $color-primary-dark-1;
-  font-size: 4rem;
-  font-family: "Acme", sans-serif;
+  &:link,
+  &:visited {
+    color: $color-primary-dark-1;
+    font-size: 4rem;
+    font-family: "Acme", sans-serif;
+    text-decoration: none;
 
-  span {
-    color: $color-tertiary;
+    span {
+      color: $color-tertiary;
+    }
   }
 }

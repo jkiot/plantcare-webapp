@@ -3,14 +3,15 @@
   &:link,
   &:visited {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
     border: none;
     text-decoration: none;
-    border-radius: 2rem;
+    border-radius: 1rem;
     font-family: inherit;
     cursor: pointer;
+    outline: 3px solid transparent;
 
-    transition: all 0.2s;
+    transition: all 0.3s;
   }
 
   &-link {
@@ -27,6 +28,7 @@
     &:hover,
     &:active {
       background-color: $color-secondary-dark-1;
+      outline: 3px solid $color-secondary-light-1;
     }
   }
 }
