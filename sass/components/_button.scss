@@ -1,0 +1,24 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    width: 12rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: "Mukta", sans-serif;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  &__orange {
+    color: #fff;
+    background-color: $color-secondary;
+    font-weight: 700;
+
+    &:hover,
+    &:active {
+      background-color: $color-secondary-dark-1;
+    }
+  }
+}
