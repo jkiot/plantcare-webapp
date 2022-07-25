@@ -3,3 +3,11 @@ body {
   font-size: $default-font-size;
   color: $color-green-dark;
 }
+
+.heading-primary {
+  font-size: 5rem;
+  font-family: "Fredoka", sans-serif;
+  color: $color-primary;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+}
