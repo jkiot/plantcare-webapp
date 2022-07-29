@@ -1,0 +1,118 @@
+.price {
+  background-color: $color-background-light;
+  padding: 5rem 4rem;
+
+  &-heading {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: $color-primary-light-1;
+    }
+  }
+
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+    justify-content: center;
+    margin: 10rem 0;
+  }
+
+  &-table {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.158);
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+
+    &__basic_pro,
+    &__premium {
+      width: 100%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__basic_pro {
+      background-image: linear-gradient(
+        to right bottom,
+        #fff,
+        $color-primary-light-1-trans1
+      );
+      color: $color-primary-light-2;
+    }
+
+    &__premium {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light-2,
+        $color-primary-light-1
+      );
+      color: #fff;
+    }
+
+    &__premium-box {
+      transform: scale(1.05);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.158);
+      z-index: 1;
+
+      &:hover {
+        transform: translateY(-0.5rem) scale(1.05);
+      }
+    }
+
+    &__heading {
+      font-family: "Fredoka", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &__value {
+      font-size: 7.8rem;
+      font-weight: 700;
+      color: $color-green-dark;
+
+      & span {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    &__offers {
+      list-style: none;
+      z-index: 100;
+      margin: 2rem 0 3rem 0;
+      width: 80%;
+      text-align: center;
+
+      & li {
+        padding: 0.5rem 0;
+      }
+
+      & li:not(:last-child) {
+        border-bottom: 1px solid rgba(3, 31, 0, 0.27);
+        width: 100%;
+      }
+    }
+  }
+}
