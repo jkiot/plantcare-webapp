@@ -1,11 +1,21 @@
+//LAYOUT
 .grid-16-cols {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+//MEASURES
+
 .marginbottom-sm {
   margin-bottom: 1rem;
 }
+
+//COLORS
 
 .color-white {
   color: #fff !important;
