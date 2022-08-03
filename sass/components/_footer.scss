@@ -1,0 +1,52 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  border-top: 1px solid $color-primary-dark-2;
+  padding: 5rem 10rem;
+  background-color: darken($color-background-light, 20%);
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    list-style: none;
+
+    > li {
+      color: inherit;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+
+    > li:hover {
+      color: $color-primary-dark-2;
+      cursor: pointer;
+    }
+  }
+}
+
+.quick-links {
+  > ul li {
+    list-style: none;
+  }
+
+  > ul li a:link,
+  > ul li a:visited {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+
+  > ul li a:hover {
+    font-weight: 700;
+  }
+}
+
+.contact {
+  > ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+}
